@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Gestión Portabilidad</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <button class="bt-ultimadescarga">La última descarga corresponde desde 12/09/23 13:17, hasta 19/09/23 13:17</button>
+        </header>
+
+        <section class="sidebar">
+            <div class="menu">
+                <h1><img src="./img/dinosaurio.png" width="50px">User Admin</h1>
+                <ul>
+                    <li><a href="#">BO Reporting</a></li> 
+                    <li><a href="#">Generador PNM</a></li>   
+                    <li><a href="#" title="Gestiones a trabajar y DNIs">GAT</a></li>   
+                    <li><a href="#">Firmas</a></li>   
+                    <li><a href="#">Contingencias</a></li> 
+                    <li><a href="#">Campañas</a></li> 
+                    <li><a href="#">NPS</a></li> 
+                    <li><h1>Portabilidad</h1></li>            
+                    
+                </ul>
+            </div>
+        </section>
+
+        <main class="main">
+            <div class="card">
+                <button class="botonera">Actualización completa lista DNI</button>
+                <br/>
+                <button class="botonera">Importar listaDNIActual</button>
+                <br/>
+                <button class="botonera">Borrar listaDNIActual</button>
+                <br/>
+                <button class="botonera">Borrar listaDNI</button>
+                <br/>
+                <button class="botonera">Descargar archivo de colección listaDNIFinal</button>
+            </div>
+            <div class="card">
+                <h3>STATUS DATOS DNI</h3>
+                <ul class="listaDNI">
+                    <li class="statusdni">listaDNI ACTIVO</li>
+                    <li class="statusdni">listaDNIActual ACTIVO</li>
+                    <li class="statusdni">listaDNISoloUnaCara NO ACTIVO</li>
+                    <li class="statusdni">listaDNIDosCaras ACTIVO</li>
+                    <li class="statusdni">pruebaInactiva NO ACTIVO</li>
+                    <li class="statusdni">listaDNIFinal ACTIVO</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="form">
+                    <form action="http://algunsitio.com/prog/usuarionuevo" method="post">
+                        <label for="desde"><b>Desde:</b>&nbsp;</label>
+                        <input type="date" id="desde">
+                        <label for="hasta"><b>Hasta:</b>&nbsp;</label>
+                        <input type="date" id="hasta"><br>
+                    </form>
+    
+                        <div class="botones-form">
+                            <a href="#" class="boton-actu-desc">
+                                Descargar
+                            </a> 
+                            &nbsp;&nbsp;&nbsp;
+                            <a href="#" class="boton-actu-desc">
+                                Actualizar
+                            </a> 
+                        </div>
+                    </div>
+            </div>
+            <div class="card">
+                <div id="contenedor-bo">
+                    <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZDc5OGY1ZWYtNmUxNy00YzlmLTk4NmItYjYzN2FlODBjNGMzIiwidCI6ImUwNzc5ZGVmLWViOTEtNDI0Mi1hZTZhLWYzOTYyYjFhMWI1YSIsImMiOjR9" height="280" width="580"></iframe>
+                </div>
+            </div>
+            <div class="card"></div>
+            
+           </div>
+        </main>
+
+    </body>
+</html>
